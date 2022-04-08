@@ -11291,8 +11291,11 @@ document.getElementById("closeButton").onclick = function() {
     document.getElementById("fullscreenMenu").style.display = "none";
 }
 	
-document.querySelectorAll(".menu__link.vertical-menu__link").onclick = function() {
-	document.getElementById("fullscreenMenu").style.display = "none";
+let vertMenuLink = document.getElementsByClassName("vertical-menu__link");
+	for(var i = 0; i < vertMenuLink.length ; i++) {
+  		vertMenuList[i].addEventListener('click', function() {
+    		document.getElementById("fullscreenMenu").style.display = "none";
+  });
 }
 
 })();(function() {
