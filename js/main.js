@@ -11293,7 +11293,7 @@ document.getElementById("closeButton").onclick = function() {
 	
 let vertMenuLink = document.getElementsByClassName("vertical-menu__link");
 	for(var i = 0; i < vertMenuLink.length ; i++) {
-  		vertMenuList[i].addEventListener('click', function() {
+  		vertMenuLink[i].addEventListener('click', function() {
     		document.getElementById("fullscreenMenu").style.display = "none";
   });
 }
