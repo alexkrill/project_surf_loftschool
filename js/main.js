@@ -11291,7 +11291,7 @@ document.getElementById("closeButton").onclick = function() {
     document.getElementById("fullscreenMenu").style.display = "none";
 }
 	
-document.getElementsByClassName("vertical-menu__link").onclick = function() {
+document.getElementsByClassName("vertical-menu__item").onclick = function() {
 	document.getElementById("fullscreenMenu").style.display = "none";
 }
 
